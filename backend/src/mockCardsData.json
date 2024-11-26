@@ -1,0 +1,442 @@
+[
+  {
+    "_id": "6745c0e9a35f3f4ba3915fd2",
+    "designId": "673603905c9ed9b8bbbdcdfa",
+    "recipient": {
+      "name": "Recipient 1",
+      "email": "recipient1@example.com"
+    },
+    "from": "Team 3",
+    "type": "card",
+    "title": "Farewell Card 1",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-06T23:44:05.510Z"
+    },
+    "deliveryDate": "2024-09-08T23:44:05.510Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fd3",
+    "sent": true,
+    "createdAt": "2024-09-05T23:44:05.510Z",
+    "updatedAt": "2024-09-08T23:44:05.510Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fd4",
+    "designId": "673603905c9ed9b8bbbdcdfa",
+    "recipient": {
+      "name": "Recipient 2",
+      "email": "recipient2@example.com"
+    },
+    "from": "Team 3",
+    "type": "card",
+    "title": "Farewell Card 2",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-01T00:52:26.830Z"
+    },
+    "deliveryDate": "2024-11-03T00:52:26.830Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fd5",
+    "sent": true,
+    "createdAt": "2024-10-31T00:52:26.830Z",
+    "updatedAt": "2024-11-03T00:52:26.830Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fd6",
+    "designId": "673e8871bad099281610c583",
+    "recipient": {
+      "name": "Recipient 3",
+      "email": "recipient3@example.com"
+    },
+    "from": "Team 6",
+    "type": "card",
+    "title": "Farewell Card 3",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-09T07:15:40.245Z"
+    },
+    "deliveryDate": "2024-09-11T07:15:40.245Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fd7",
+    "sent": true,
+    "createdAt": "2024-09-08T07:15:40.245Z",
+    "updatedAt": "2024-09-11T07:15:40.245Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fd8",
+    "designId": "66c67d96714e579a9fa13c7a",
+    "recipient": {
+      "name": "Recipient 4",
+      "email": "recipient4@example.com"
+    },
+    "from": "Team 9",
+    "type": "card",
+    "title": "Farewell Card 4",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-02T02:51:15.606Z"
+    },
+    "deliveryDate": "2024-11-04T02:51:15.606Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fd9",
+    "sent": true,
+    "createdAt": "2024-11-01T02:51:15.606Z",
+    "updatedAt": "2024-11-04T02:51:15.606Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fda",
+    "designId": "6735169ae8c991dba26b0d1f",
+    "recipient": {
+      "name": "Recipient 5",
+      "email": "recipient5@example.com"
+    },
+    "from": "Team 6",
+    "type": "card",
+    "title": "Farewell Card 5",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-21T03:46:04.917Z"
+    },
+    "deliveryDate": "2024-09-23T03:46:04.917Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fdb",
+    "sent": true,
+    "createdAt": "2024-09-20T03:46:04.917Z",
+    "updatedAt": "2024-09-23T03:46:04.917Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fdc",
+    "designId": "673e856fbad099281610c23e",
+    "recipient": {
+      "name": "Recipient 6",
+      "email": "recipient6@example.com"
+    },
+    "from": "Team 2",
+    "type": "card",
+    "title": "Farewell Card 6",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-09T21:26:16.014Z"
+    },
+    "deliveryDate": "2024-11-11T21:26:16.014Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fdd",
+    "sent": true,
+    "createdAt": "2024-11-08T21:26:16.014Z",
+    "updatedAt": "2024-11-11T21:26:16.014Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fde",
+    "designId": "67351427e8c991dba26b07af",
+    "recipient": {
+      "name": "Recipient 7",
+      "email": "recipient7@example.com"
+    },
+    "from": "Team 10",
+    "type": "card",
+    "title": "Farewell Card 7",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-08-31T21:17:16.936Z"
+    },
+    "deliveryDate": "2024-09-02T21:17:16.936Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fdf",
+    "sent": true,
+    "createdAt": "2024-08-30T21:17:16.936Z",
+    "updatedAt": "2024-09-02T21:17:16.936Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fe0",
+    "designId": "673603905c9ed9b8bbbdcdfa",
+    "recipient": {
+      "name": "Recipient 8",
+      "email": "recipient8@example.com"
+    },
+    "from": "Team 8",
+    "type": "card",
+    "title": "Farewell Card 8",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-12T01:43:35.549Z"
+    },
+    "deliveryDate": "2024-11-14T01:43:35.549Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fe1",
+    "sent": true,
+    "createdAt": "2024-11-11T01:43:35.549Z",
+    "updatedAt": "2024-11-14T01:43:35.549Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fe2",
+    "designId": "66c67d96714e579a9fa13c7a",
+    "recipient": {
+      "name": "Recipient 9",
+      "email": "recipient9@example.com"
+    },
+    "from": "Team 4",
+    "type": "card",
+    "title": "Farewell Card 9",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-29T10:28:26.886Z"
+    },
+    "deliveryDate": "2024-10-01T10:28:26.886Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fe3",
+    "sent": true,
+    "createdAt": "2024-09-28T10:28:26.886Z",
+    "updatedAt": "2024-10-01T10:28:26.886Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fe4",
+    "designId": "673603905c9ed9b8bbbdcdfa",
+    "recipient": {
+      "name": "Recipient 10",
+      "email": "recipient10@example.com"
+    },
+    "from": "Team 1",
+    "type": "card",
+    "title": "Farewell Card 10",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-26T15:11:49.121Z"
+    },
+    "deliveryDate": "2024-09-28T15:11:49.121Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fe5",
+    "sent": true,
+    "createdAt": "2024-09-25T15:11:49.121Z",
+    "updatedAt": "2024-09-28T15:11:49.121Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fe6",
+    "designId": "67351427e8c991dba26b07af",
+    "recipient": {
+      "name": "Recipient 11",
+      "email": "recipient11@example.com"
+    },
+    "from": "Team 4",
+    "type": "card",
+    "title": "Farewell Card 11",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-10-29T09:16:15.970Z"
+    },
+    "deliveryDate": "2024-10-31T09:16:15.970Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fe7",
+    "sent": true,
+    "createdAt": "2024-10-28T09:16:15.970Z",
+    "updatedAt": "2024-10-31T09:16:15.970Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fe8",
+    "designId": "67351427e8c991dba26b07af",
+    "recipient": {
+      "name": "Recipient 12",
+      "email": "recipient12@example.com"
+    },
+    "from": "Team 3",
+    "type": "card",
+    "title": "Farewell Card 12",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-23T16:25:13.959Z"
+    },
+    "deliveryDate": "2024-11-25T16:25:13.959Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fe9",
+    "sent": true,
+    "createdAt": "2024-11-22T16:25:13.959Z",
+    "updatedAt": "2024-11-25T16:25:13.959Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fea",
+    "designId": "673e856fbad099281610c23e",
+    "recipient": {
+      "name": "Recipient 13",
+      "email": "recipient13@example.com"
+    },
+    "from": "Team 10",
+    "type": "card",
+    "title": "Farewell Card 13",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-12T06:37:30.178Z"
+    },
+    "deliveryDate": "2024-09-14T06:37:30.178Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915feb",
+    "sent": true,
+    "createdAt": "2024-09-11T06:37:30.178Z",
+    "updatedAt": "2024-09-14T06:37:30.178Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fec",
+    "designId": "6734e7415c9ed9b8bbb9eee0",
+    "recipient": {
+      "name": "Recipient 14",
+      "email": "recipient14@example.com"
+    },
+    "from": "Team 3",
+    "type": "card",
+    "title": "Farewell Card 14",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-10T07:21:15.959Z"
+    },
+    "deliveryDate": "2024-11-12T07:21:15.959Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fed",
+    "sent": true,
+    "createdAt": "2024-11-09T07:21:15.959Z",
+    "updatedAt": "2024-11-12T07:21:15.959Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915fee",
+    "designId": "66c67d96714e579a9fa13c7a",
+    "recipient": {
+      "name": "Recipient 15",
+      "email": "recipient15@example.com"
+    },
+    "from": "Team 10",
+    "type": "card",
+    "title": "Farewell Card 15",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-01T09:58:53.835Z"
+    },
+    "deliveryDate": "2024-11-03T09:58:53.835Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915fef",
+    "sent": true,
+    "createdAt": "2024-10-31T09:58:53.835Z",
+    "updatedAt": "2024-11-03T09:58:53.835Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915ff0",
+    "designId": "673603905c9ed9b8bbbdcdfa",
+    "recipient": {
+      "name": "Recipient 16",
+      "email": "recipient16@example.com"
+    },
+    "from": "Team 5",
+    "type": "card",
+    "title": "Farewell Card 16",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-01T06:37:19.433Z"
+    },
+    "deliveryDate": "2024-11-03T06:37:19.433Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915ff1",
+    "sent": true,
+    "createdAt": "2024-10-31T06:37:19.433Z",
+    "updatedAt": "2024-11-03T06:37:19.433Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915ff2",
+    "designId": "6735169ae8c991dba26b0d1f",
+    "recipient": {
+      "name": "Recipient 17",
+      "email": "recipient17@example.com"
+    },
+    "from": "Team 8",
+    "type": "card",
+    "title": "Farewell Card 17",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-10-27T02:40:32.099Z"
+    },
+    "deliveryDate": "2024-10-29T02:40:32.099Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915ff3",
+    "sent": true,
+    "createdAt": "2024-10-26T02:40:32.099Z",
+    "updatedAt": "2024-10-29T02:40:32.099Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915ff4",
+    "designId": "66c67d96714e579a9fa13c7a",
+    "recipient": {
+      "name": "Recipient 18",
+      "email": "recipient18@example.com"
+    },
+    "from": "Team 2",
+    "type": "card",
+    "title": "Farewell Card 18",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-11-15T15:19:33.874Z"
+    },
+    "deliveryDate": "2024-11-17T15:19:33.874Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915ff5",
+    "sent": true,
+    "createdAt": "2024-11-14T15:19:33.874Z",
+    "updatedAt": "2024-11-17T15:19:33.874Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915ff6",
+    "designId": "673603905c9ed9b8bbbdcdfa",
+    "recipient": {
+      "name": "Recipient 19",
+      "email": "recipient19@example.com"
+    },
+    "from": "Team 4",
+    "type": "card",
+    "title": "Farewell Card 19",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-09-29T05:57:18.241Z"
+    },
+    "deliveryDate": "2024-10-01T05:57:18.241Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915ff7",
+    "sent": true,
+    "createdAt": "2024-09-28T05:57:18.241Z",
+    "updatedAt": "2024-10-01T05:57:18.241Z",
+    "deleted": false
+  },
+  {
+    "_id": "6745c0e9a35f3f4ba3915ff8",
+    "designId": "673e856fbad099281610c23e",
+    "recipient": {
+      "name": "Recipient 20",
+      "email": "recipient20@example.com"
+    },
+    "from": "Team 5",
+    "type": "card",
+    "title": "Farewell Card 20",
+    "teamMessage": "We'll miss you! Best wishes from the team.",
+    "payment": {
+      "paid": true,
+      "datePaid": "2024-10-06T14:42:12.792Z"
+    },
+    "deliveryDate": "2024-10-08T14:42:12.792Z",
+    "shareId": "share_6745c0e9a35f3f4ba3915ff9",
+    "sent": true,
+    "createdAt": "2024-10-05T14:42:12.792Z",
+    "updatedAt": "2024-10-08T14:42:12.792Z",
+    "deleted": false
+  }
+]
