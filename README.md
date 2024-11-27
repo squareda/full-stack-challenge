@@ -25,7 +25,7 @@ Implement new features for a design gallery application to enhance user interact
 ### 1. Design Labels
 
 - Add labels to designs (e.g., "new", "customisable")
-- Personalisable should be prioritised over new.
+- Customisable should be prioritised over new.
 - New designs are ones created in the last 14 days.
 - Labels should be visible in the UI
 - See current site for visual reference
@@ -38,14 +38,8 @@ Implement new features for a design gallery application to enhance user interact
 ### 3. Trending Sort
 
 - Implement sorting by trending designs
-- Trending calculation based on:
-  - Recent usage metrics
-  - Heart count momentum
-  - Rate of change (e.g., rapid increase from zero)
-- Requirements:
-  - Define trending score algorithm
-  - Efficient sorting implementation
-  - Handle large design collections
+  - Trending calculation based on when it was created, how many times it has been used recently (and maybe how many hearts it has).
+  - Consider how it would function with lots of designs and cards.
 
 ## Notes
 
