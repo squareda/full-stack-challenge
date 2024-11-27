@@ -6,6 +6,7 @@ import designRoutes from "./routes/design";
 import cardRoutes from "./routes/card";
 import userRoutes from "./routes/user";
 import cookieParser from "cookie-parser";
+import APIError, { statusCodes } from "./utils/APIError";
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -32,6 +33,25 @@ app.use(json());
 app.use("/designs", designRoutes);
 app.use("/cards", cardRoutes);
 app.use("/user", userRoutes);
+
+app.use(
+  (
+    err: any,
+    req: any,
+    res: any,
+    next: any // eslint-disable-line no-unused-vars
+  ) => {
+    const stack = process.env.NODE_ENV !== "production" ? err.stack : undefined;
+    if (err instanceof APIError) {
+      const message = err.isPublic
+        ? err.message
+        : statusCodes.getStatusText(err.statusCode);
+      return res.status(err.statusCode).send({ message, stack });
+    }
+
+    res.status(500).send({ message: statusCodes.getStatusText(500), stack });
+  }
+);
 
 connectDB().then(() => {
   app

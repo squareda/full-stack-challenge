@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               }}
             >
               <MenuItem value="none">No User</MenuItem>
-              {user?.allUsers.map((u) => (
+              {user?.allUsers?.map((u) => (
                 <MenuItem key={u._id} value={u._id}>
                   {u.name}
                 </MenuItem>
@@ -77,10 +77,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Box
         component="footer"
         sx={{
-          backgroundColor: "primary.dark",
+          backgroundColor: "primary.light",
           color: "primary.contrastText",
           minHeight: 100,
           textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           p: 2,
           mt: 4,
         }}
