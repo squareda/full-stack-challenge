@@ -7,8 +7,8 @@
   ],
   "scripts": {
     "install-all": "yarn install",
-    "dev": "concurrently \"yarn workspace backend start\" \"yarn workspace frontend dev\"",
     "start": "concurrently \"yarn workspace backend start\" \"yarn workspace frontend start\"",
+    "clean-db": "rm -rf backend/test-db",
     "build": "yarn workspace frontend build"
   },
   "devDependencies": {

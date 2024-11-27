@@ -1,10 +1,6 @@
 import { Schema, Document, model } from "mongoose";
-import mongooseDelete, {
-  SoftDeleteModel,
-  SoftDeleteDocument,
-} from "mongoose-delete";
 
-export interface IDesign extends SoftDeleteDocument {
+export interface IDesign {
   categories: string[];
   name: string;
   active: boolean;
@@ -31,14 +27,12 @@ const DesignSchema = new Schema<IDesign>(
     active: { type: Boolean },
     caption: { type: String },
     categories: [{ type: String, index: true }],
-    designer: { type: String, select: false },
     uploadableDesignCover: { type: Boolean },
     group: { type: String, index: true },
     groupVariant: { type: String },
     groupOnly: { type: Boolean },
     customisable: { type: Boolean },
     format: { type: String },
-    addedBy: { ref: "User", type: Schema.Types.ObjectId, select: false },
     tags: {
       type: [String],
       select: false,
@@ -61,11 +55,6 @@ DesignSchema.index(
   }
 );
 
-DesignSchema.plugin(mongooseDelete, { deletedAt: true, overrideMethods: true });
-
-const Design = model<IDesignModel, SoftDeleteModel<IDesignModel>>(
-  "Design",
-  DesignSchema
-);
+const Design = model<IDesignModel>("Design", DesignSchema);
 
 export default Design;

@@ -1,5 +1,21 @@
 # Design Gallery Coding Challenge
 
+## Run the project
+
+The project should be self contained running a virtual mongodb instance in memory so the only requirement should be installing node/yarn.
+
+```bash
+yarn install
+
+yarn start
+```
+
+The frontend should be available at `http://localhost:3002` and the backend at `http://localhost:5001`.
+
+### DB Issues
+
+The db runs in memory but is persisted to the `backend/test-db` folder so that it's easier to test changes. If you want to reset the db or there is an issue just delete the folder or run `yarn clean-db`.
+
 ## Challenge Overview
 
 Implement new features for a design gallery application to enhance user interaction and content relevance.

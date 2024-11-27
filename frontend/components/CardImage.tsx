@@ -1,6 +1,4 @@
 import React from "react";
-// import isDev from '@/utils/isDev';
-// import config from '@/config';
 
 const config = {
   imageDomain: "https://groupleavingcards.com/assets/design/",
@@ -15,7 +13,6 @@ interface Props
   id: string;
   alt: string;
   small?: boolean;
-  /** Use this flag to add query string to cache */
   query?: string;
   customisable?: boolean;
   animated?: boolean;
