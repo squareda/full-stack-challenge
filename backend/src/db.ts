@@ -5,6 +5,7 @@ import { designs } from "./mockDesigns";
 import Card from "./models/Card";
 import fs from "fs";
 import mockCardsData from "./mockCardsData.json";
+import User from "./models/User";
 
 let mongoServer: MongoMemoryServer;
 
@@ -33,6 +34,7 @@ export const connectDB = async () => {
     // Prefill the database with mock designs
     await preloadDesigns();
     await preloadCards();
+    await preloadUsers();
   } catch (error) {
     console.log("Mock data already inserted");
   }
@@ -46,6 +48,10 @@ const preloadDesigns = async () => {
 const preloadCards = async () => {
   await Card.insertMany(mockCardsData);
   console.log("Mock cards inserted");
+};
+
+const preloadUsers = async () => {
+  await User.insertMany([{ name: "User 1" }, { name: "User 2" }]);
 };
 
 process.on("SIGUSR2", async () => {

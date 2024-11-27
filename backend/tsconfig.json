@@ -10,6 +10,8 @@
     "lib": ["es2017", "dom"],
     "types": ["node"],
     "skipLibCheck": true
-
+  },
+  "ts-node": {
+    "files": true
   }
-} 
+}

@@ -46,3 +46,10 @@ Implement new features for a design gallery application to enhance user interact
   - Define trending score algorithm
   - Efficient sorting implementation
   - Handle large design collections
+
+## Notes
+
+- There is a fake user switcher setup in the navbar to simulate different users. You can access the current user on the api with `req.user`. Assume that this user has been properly authenticated and the id is valid for the purposes of this challenge. There is no need to implement real authentication.
+- Feel free to add any additional libraries you think are necessary but please stick to using the core libraries provided (MUI, Next.js, Express, MongoDB).
+- If possible try and show your progress through commits, ideally at least one commit per task.
+- If you run out of time you don't need to implement everything, but have a think about what you would change if you had more time.

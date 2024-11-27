@@ -3,7 +3,8 @@ import { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import { createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { AppBar, Box, Typography } from "@mui/material";
+import { AppBar, Box, MenuItem, Select, Typography } from "@mui/material";
+import useUser from "../components/useUser";
 
 const theme = createTheme({
   // Customize your theme here
@@ -18,6 +19,8 @@ const theme = createTheme({
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const user = useUser();
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -27,6 +30,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         sx={{
           height: 60,
           justifyContent: "center",
+          alignItems: "center",
+          display: "flex",
+          flexDirection: "row",
           mb: 2,
         }}
         position="relative"
@@ -40,6 +46,32 @@ function MyApp({ Component, pageProps }: AppProps) {
         >
           Group Cards
         </Typography>
+        <Box sx={{ flexGrow: 1 }} />
+        <Box sx={{ mr: 2 }}>
+          User Picker:
+          {user && (
+            <Select
+              sx={{ ml: 1 }}
+              value={user?.user?._id || "none"}
+              onChange={(e) => {
+                if (e.target.value === "none") {
+                  document.cookie =
+                    "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+                } else {
+                  document.cookie = `user=${e.target.value}`;
+                }
+                window.location.reload();
+              }}
+            >
+              <MenuItem value="none">No User</MenuItem>
+              {user?.allUsers.map((u) => (
+                <MenuItem key={u._id} value={u._id}>
+                  {u.name}
+                </MenuItem>
+              ))}
+            </Select>
+          )}
+        </Box>
       </AppBar>
       <Component {...pageProps} />
       <Box
