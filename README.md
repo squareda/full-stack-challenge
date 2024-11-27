@@ -24,8 +24,9 @@ Implement new features for a design gallery application to enhance user interact
 
 ### 1. Design Labels
 
-- Add labels to designs (e.g., "new", "personalisable")
+- Add labels to designs (e.g., "new", "customisable")
 - Personalisable should be prioritised over new.
+- New designs are ones created in the last 14 days.
 - Labels should be visible in the UI
 - See current site for visual reference
 
