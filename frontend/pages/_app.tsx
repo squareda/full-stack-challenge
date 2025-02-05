@@ -88,7 +88,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           mt: 4,
         }}
       >
-        Copyright 2024
+        Group Cards
       </Box>
     </ThemeProvider>
   );

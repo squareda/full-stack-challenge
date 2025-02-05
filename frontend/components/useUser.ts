@@ -1,20 +1,11 @@
-import { useEffect, useState } from "react";
+import { useAxios } from "../api";
 
 type User = { name: string; _id: string };
 
 const useUser = () => {
-  const [user, setUser] = useState<
-    { user?: User; allUsers: User[] } | undefined
-  >(undefined);
+  const [{ data }] = useAxios<{ user?: User; allUsers: User[] }>("/user");
 
-  useEffect(() => {
-    fetch("http://localhost:5001/user", { credentials: "include" })
-      .then((res) => res.json())
-      .then((data) => setUser(data))
-      .catch((error) => console.error("Error:", error));
-  }, []);
-
-  return user;
+  return data;
 };
 
 export default useUser;

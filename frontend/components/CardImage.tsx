@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 const config = {
@@ -36,6 +37,27 @@ export const getImageUrl = (options: {
   }${options.format ? `.${options.format}` : ""}`;
 };
 
+const CustomImage = (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+  <Box
+    component="img"
+    sx={(theme) => ({
+      maxWidth: "100%",
+      borderStyle: "solid",
+      borderColor: theme.palette.grey[100],
+      boxSizing: "border-box",
+      aspectRatio: "4/5",
+      display: "block",
+      marginBottom: 1,
+      width: "100%",
+      "&:hover": {
+        borderColor: theme.palette.grey[200],
+        cursor: "pointer",
+      },
+    })}
+    {...props}
+  />
+);
+
 /**
  * Render card image using best supported image format
  */
@@ -51,7 +73,7 @@ const CardImage: React.FC<Props> = ({
 }) => {
   if (customDesignPath) {
     const src = getImageUrl({ customDesignPath });
-    return <img {...props} src={src} alt={alt} />;
+    return <CustomImage {...props} src={src} alt={alt} />;
   }
 
   const base = getImageUrl({ designId: id, small, customisable });
@@ -71,7 +93,7 @@ const CardImage: React.FC<Props> = ({
         srcSet={`${base}.${animated ? "gif" : "jpg"}${q}`}
         type={`image/${animated ? "gif" : "jpeg"}`}
       />
-      <img
+      <CustomImage
         {...props}
         src={`${base}.${animated ? "gif" : "jpg"}${q}`}
         alt={alt}

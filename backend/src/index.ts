@@ -41,6 +41,7 @@ app.use(
     res: any,
     next: any // eslint-disable-line no-unused-vars
   ) => {
+    console.log(err);
     const stack = process.env.NODE_ENV !== "production" ? err.stack : undefined;
     if (err instanceof APIError) {
       const message = err.isPublic
